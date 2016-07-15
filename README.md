@@ -8,4 +8,4 @@ A while back I created RGSColorSlider and while creating it I used an image for 
 
 Simply added RGSHueView.swift to your project then declare your UIView as RGSHueView and you’re good to.
 
-[GradientProgressView]:(https://github.com/nrj/GradientProgressView)
+[GradientProgressView]: <https://github.com/nrj/GradientProgressView>
