@@ -11,22 +11,21 @@ Simply added RGSHueView.swift to your project then declare your UIView as RGSHue
 [GradientProgressView]: <https://github.com/nrj/GradientProgressView>
 
 ```swift		
- -private func commonInit()  {		
- -  guard let gradientLayer = self.layer as? CAGradientLayer else { return }		
- -        		
- -  gradientLayer.startPoint = CGPointMake(0.0, 0.5)		
- -  gradientLayer.endPoint = CGPointMake(1.0, 0.5)		
- -        		
- -  let colors : NSMutableArray = []		
- -  var deq = 0		
- -  while deq <= 360 {		
- -    let color = UIColor(hue: 1.0 * CGFloat(deq) / 360.0, saturation: 1.0, brightness: 1.0, alpha: 1.0)		
- -    colors.addObject(color.CGColor)		
- -            		
- -    deq += 5		
- -  }		
- -  gradientLayer.colors = colors as [AnyObject]		
- -		
- -}
+private func commonInit()  {		
+  guard let gradientLayer = self.layer as? CAGradientLayer else { return }		
+         		
+  gradientLayer.startPoint = CGPointMake(0.0, 0.5)		
+  gradientLayer.endPoint = CGPointMake(1.0, 0.5)		
+         		
+  let colors : NSMutableArray = []		
+  var deq = 0		
+  while deq <= 360 {		
+    let color = UIColor(hue: 1.0 * CGFloat(deq) / 360.0, saturation: 1.0, brightness: 1.0, alpha: 1.0)		
+    colors.addObject(color.CGColor)		
+              		
+    deq += 5		
+  }		
+  gradientLayer.colors = colors as [AnyObject]		
+}
  
  ```
